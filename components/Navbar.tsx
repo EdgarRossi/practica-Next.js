@@ -20,7 +20,7 @@ const menuItems = [
   },
 ];
 
-export function Navbar() {
+export const Navbar = () => {
   return (
     <nav className={styles["menu-container"]}>
       {menuItems.map(({ text, href }) => (
@@ -33,4 +33,4 @@ export function Navbar() {
       <ActiveLink text="Pricing" href="/pricing" /> */}
     </nav>
   );
-}
+};

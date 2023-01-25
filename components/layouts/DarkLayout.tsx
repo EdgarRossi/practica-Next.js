@@ -1,4 +1,8 @@
-export function DarkLayout({ children }) {
+interface DarkLayoutProps {
+  children: React.ReactNode;
+}
+
+export const DarkLayout = ({ children }: DarkLayoutProps) => {
   return (
     <div
       style={{
@@ -11,4 +15,4 @@ export function DarkLayout({ children }) {
       <div>{children}</div>
     </div>
   );
-}
+};

@@ -2,6 +2,7 @@ import Link from "next/link";
 import styles from "./Home.module.css";
 import { MainLayout } from "../components/layouts/MainLayout";
 import { DarkLayout } from "../components/layouts/DarkLayout";
+import { ReactElement } from "react";
 
 export default function Abaut() {
   return (
@@ -18,7 +19,7 @@ export default function Abaut() {
   );
 }
 
-Abaut.getLayout = function (page) {
+Abaut.getLayout = function (page: ReactElement) {
   return (
     <MainLayout>
       <DarkLayout>{page}</DarkLayout>
